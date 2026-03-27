@@ -141,3 +141,219 @@ button:hover {
   padding: 20px;
   margin-top: 40px;
 }
+/* =========================
+   RESPONSIVIDADE - TAREFA V
+   ========================= */
+
+/* Garante que nada estoure a largura da tela */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container principal mais flexível */
+body {
+    overflow-x: hidden;
+}
+
+/* Menu de navegação responsivo */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Seções com layout flexível */
+main,
+section {
+    width: 100%;
+}
+
+/* Cards/blocos ficam lado a lado em telas maiores */
+.cards,
+.container-cards,
+.card-lista,
+.blocos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card individual */
+.card,
+.bloco {
+    flex: 1 1 250px;
+    max-width: 320px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 8px;
+    }
+
+    .card,
+    .bloco {
+        flex: 1 1 220px;
+        max-width: 100%;
+    }
+}
+
+/* =========================
+   CELULAR
+   ========================= */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 20px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero,
+    .banner,
+    .conteudo-principal,
+    .secao-principal {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .cards,
+    .container-cards,
+    .card-lista,
+    .blocos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .bloco {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 15px;
+    }
+}
+
+/* =========================
+   CELULAR PEQUENO
+   ========================= */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p,
+    li,
+    a {
+        font-size: 0.95rem;
+    }
+
+    .cabecalho {
+        padding: 20px 15px;
+    }
+
+    .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.menu ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    .principal {
+        padding: 15px;
+    }
+
+    .bloco {
+        width: 100%;
+        max-width: 100%;
+        margin: 15px 0;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .formulario input,
+    .formulario button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .rodape {
+        padding: 15px;
+        text-align: center;
+    }
+}

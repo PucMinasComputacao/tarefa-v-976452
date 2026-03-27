@@ -1,12 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EJC da Paróquia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header class="cabecalho">
+        <h1>EJC da Paróquia</h1>
+        <p>Jovens unidos pela fé, amor e missão</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#encontros">Encontros</a></li>
+            <li><a href="#equipes">Equipes</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-principal">
+        <section class="banner">
+    <img src="https://picsum.photos/1200/400" alt="Banner principal do EJC">
+</section>
+        <section id="sobre" class="secao">
+            <h2>Sobre o EJC</h2>
+            <p>
+                O Encontro de Jovens com Cristo (EJC) é um movimento que acolhe, evangeliza e fortalece a juventude
+                por meio da convivência, espiritualidade e serviço. Nosso objetivo é aproximar os jovens de Deus
+                e da comunidade.
+            </p>
+        </section>
+
+        <section id="encontros" class="secao">
+            <h2>Próximos Encontros</h2>
+            <div class="cards">
+                <article class="card">
+                      <img src="img/homepage.png" alt="Retiro Jovem">
+                    <h3>Retiro Jovem</h3>
+                    <p>Data: 10/04/2026</p>
+                    <p>Um momento especial de oração, partilha e renovação espiritual.</p>
+                </article>
+
+                <article class="card">
+                      <img src="img/homepage.png" alt="Adoração ao Santíssimo">
+                    <h3>Adoração ao Santíssimo</h3>
+                    <p>Data: 20/04/2026</p>
+                    <p>Uma noite de intimidade com Jesus, louvor e entrega.</p>
+                </article>
+
+                <article class="card">
+                      <img src="img/homepage.png" alt="Formação de Servos">
+                    <h3>Formação de Servos</h3>
+                    <p>Data: 05/05/2026</p>
+                    <p>Capacitação e preparação para os jovens que desejam servir no movimento.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="equipes" class="secao">
+            <h2>Equipes do EJC</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="img/homepage.png" alt="Equipe de Liturgia">
+                    <h3>Liturgia</h3>
+                    <p>Responsável pela espiritualidade, celebrações e momentos de oração.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/homepage.png" alt="Equipe de Música">
+                    <h3>Música</h3>
+                    <p>Conduz o louvor e anima os encontros com alegria e unção.</p>
+                </article>
+
+                <article class="card">
+                     <img src="img/homepage.png" alt="Equipe de Acolhida">
+                    <h3>Acolhida</h3>
+                    <p>Recebe os jovens com carinho, atenção e espírito de fraternidade.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="inscricao" class="secao">
+            <h2>Inscrição</h2>
+            <form class="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+
+                <button type="submit">Quero Participar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 EJC da Paróquia - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
